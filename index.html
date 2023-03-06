@@ -16,9 +16,13 @@
         <div class="product-container">
           <div class="product-image">
             <!-- image goes here -->
+            <img :src="image">
           </div>
           <div class="product-info">
-            <h1>{{ product }}</h1>
+            <h1>
+              {{ product }}
+              <a v-bind:href="url">Click here for more info</a>
+            </h1>
           </div>
         </div>
       </div>
